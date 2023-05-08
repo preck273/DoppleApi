@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "operatorId": {
+      "type": "string"
+    },
+    "username": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 8,
+        "pattern": "[a-zA-Z]"
+    },
+    "password": {
+        "type": "string",
+        "pattern": "[a-zA-Z0-9]{9}"
+    },
+    "authorization": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "operatorId",
+    "username",
+    "password",
+    "authorization"
+  ]
+}

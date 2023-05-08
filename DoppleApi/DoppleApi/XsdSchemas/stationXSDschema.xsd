@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+   <xs:element name="station">
+	<xs:complexType>
+			<xs:attribute name="stationId" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:nonNegativeInteger">
+						<xs:minInclusive value = "0"/>
+						<xs:maxInclusive value = "999"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+
+		<xs:attribute name="statusStation" use="required">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[a-zA-Z]"/>
+					<xs:minLength value="1"/>
+					<xs:maxLength value="8"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+</xs:element>
+
+</xs:schema>
+

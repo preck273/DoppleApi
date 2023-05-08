@@ -1,0 +1,306 @@
+Carrier
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string"
+    },
+    "orderIdO": {
+      "type": "string"
+    },
+    "stationId": {
+      "type": "integer"
+    },
+    "statusCarrier": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "tagId",
+    "orderIdO",
+    "stationId",
+    "statusCarrier"
+  ]
+}
+Instruction
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "instructionId": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "imagePath": {
+      "type": "string"
+    },
+    "stationId": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "instructionId",
+    "description",
+    "imagePath",
+    "stationId"
+  ]
+}
+Operator
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "operatorId": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "authorization": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "operatorId",
+    "username",
+    "password",
+    "authorization"
+  ]
+}
+OperatorPosition
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "operatorId": {
+      "type": "string"
+    },
+    "stationId": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "operatorId",
+    "stationId"
+  ]
+}
+order
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "string"
+    },
+    "orderDate": {
+      "type": "string"
+    },
+    "faceplateText": {
+      "type": "string"
+    },
+    "earshellSize": {
+      "type": "integer"
+    },
+    "earshellColor": {
+      "type": "string"
+    },
+    "cradleColor": {
+      "type": "string"
+    },
+    "statusOrder": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "orderId",
+    "orderDate",
+    "faceplateText",
+    "earshellSize",
+    "earshellColor",
+    "cradleColor",
+    "statusOrder"
+  ]
+}
+
+Station
+
+Test
+
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "tagId": {
+      "type": "string"
+    },
+    "testId": {
+      "type": "integer"
+    },
+    "orderId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "tagId",
+    "testId",
+    "orderId"
+  ]
+}
+
+TestResult
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "testId": {
+      "type": "integer"
+    },
+    "result": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "operatorCompanyId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "testId",
+    "result",
+    "reason",
+    "operatorCompanyId"
+  ]
+}
+TurnOverTime
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "string"
+    },
+    "stationId": {
+      "type": "integer"
+    },
+    "dateStart": {
+      "type": "string"
+    },
+    "timeStart": {
+      "type": "object",
+      "properties": {
+        "ticks": {
+          "type": "integer"
+        },
+        "days": {
+          "type": "integer"
+        },
+        "hours": {
+          "type": "integer"
+        },
+        "milliseconds": {
+          "type": "integer"
+        },
+        "minutes": {
+          "type": "integer"
+        },
+        "seconds": {
+          "type": "integer"
+        },
+        "totalDays": {
+          "type": "integer"
+        },
+        "totalHours": {
+          "type": "integer"
+        },
+        "totalMilliseconds": {
+          "type": "integer"
+        },
+        "totalMinutes": {
+          "type": "integer"
+        },
+        "totalSeconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ticks",
+        "days",
+        "hours",
+        "milliseconds",
+        "minutes",
+        "seconds",
+        "totalDays",
+        "totalHours",
+        "totalMilliseconds",
+        "totalMinutes",
+        "totalSeconds"
+      ]
+    },
+    "timeEnd": {
+      "type": "object",
+      "properties": {
+        "ticks": {
+          "type": "integer"
+        },
+        "days": {
+          "type": "integer"
+        },
+        "hours": {
+          "type": "integer"
+        },
+        "milliseconds": {
+          "type": "integer"
+        },
+        "minutes": {
+          "type": "integer"
+        },
+        "seconds": {
+          "type": "integer"
+        },
+        "totalDays": {
+          "type": "integer"
+        },
+        "totalHours": {
+          "type": "integer"
+        },
+        "totalMilliseconds": {
+          "type": "integer"
+        },
+        "totalMinutes": {
+          "type": "integer"
+        },
+        "totalSeconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ticks",
+        "days",
+        "hours",
+        "milliseconds",
+        "minutes",
+        "seconds",
+        "totalDays",
+        "totalHours",
+        "totalMilliseconds",
+        "totalMinutes",
+        "totalSeconds"
+      ]
+    }
+  },
+  "required": [
+    "orderId",
+    "stationId",
+    "dateStart",
+    "timeStart",
+    "timeEnd"
+  ]
+}

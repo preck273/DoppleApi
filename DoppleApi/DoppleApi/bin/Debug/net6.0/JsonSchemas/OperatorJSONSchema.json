@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "operatorId": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "([0-9])*"
+    },
+    "stationId": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 999
+    }
+  },
+  "required": [
+    "operatorId",
+    "stationId"
+  ]
+}

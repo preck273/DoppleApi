@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "testId": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "result": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 8,
+      "pattern": "[a-zA-Z]"
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 8,
+      "pattern": "[a-zA-Z]"
+    },
+    "operatorCompanyId": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "([0-9])*"
+    }
+  },
+  "required": [
+    "testId",
+    "result",
+    "reason",
+    "operatorCompanyId"
+  ]
+}

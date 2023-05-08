@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "stationId": {
+      "type": "string",
+      "minimum": 0,
+      "maximum": 999
+    },
+    "statusStation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 8,
+      "pattern": "[a-zA-Z]"
+    }
+  },
+  "required": [
+    "stationId",
+    "statusStation"
+  ]
+}

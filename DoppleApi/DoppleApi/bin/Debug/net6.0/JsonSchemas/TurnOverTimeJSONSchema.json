@@ -1,0 +1,123 @@
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "orderId": {
+      "type": "string"
+    },
+    "stationId": {
+      "type": "integer"
+    },
+    "dateStart": {
+      "type": "string"
+    },
+    "timeStart": {
+      "type": "object",
+      "properties": {
+        "ticks": {
+          "type": "integer"
+        },
+        "days": {
+          "type": "integer"
+        },
+        "hours": {
+          "type": "integer"
+        },
+        "milliseconds": {
+          "type": "integer"
+        },
+        "minutes": {
+          "type": "integer"
+        },
+        "seconds": {
+          "type": "integer"
+        },
+        "totalDays": {
+          "type": "integer"
+        },
+        "totalHours": {
+          "type": "integer"
+        },
+        "totalMilliseconds": {
+          "type": "integer"
+        },
+        "totalMinutes": {
+          "type": "integer"
+        },
+        "totalSeconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ticks",
+        "days",
+        "hours",
+        "milliseconds",
+        "minutes",
+        "seconds",
+        "totalDays",
+        "totalHours",
+        "totalMilliseconds",
+        "totalMinutes",
+        "totalSeconds"
+      ]
+    },
+    "timeEnd": {
+      "type": "object",
+      "properties": {
+        "ticks": {
+          "type": "integer"
+        },
+        "days": {
+          "type": "integer"
+        },
+        "hours": {
+          "type": "integer"
+        },
+        "milliseconds": {
+          "type": "integer"
+        },
+        "minutes": {
+          "type": "integer"
+        },
+        "seconds": {
+          "type": "integer"
+        },
+        "totalDays": {
+          "type": "integer"
+        },
+        "totalHours": {
+          "type": "integer"
+        },
+        "totalMilliseconds": {
+          "type": "integer"
+        },
+        "totalMinutes": {
+          "type": "integer"
+        },
+        "totalSeconds": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "ticks",
+        "days",
+        "hours",
+        "milliseconds",
+        "minutes",
+        "seconds",
+        "totalDays",
+        "totalHours",
+        "totalMilliseconds",
+        "totalMinutes",
+        "totalSeconds"
+      ]
+    }
+  },
+  "required": [
+    "orderId",
+    "stationId",
+    "dateStart",
+    "timeStart",
+    "timeEnd"
+  ]
+}
